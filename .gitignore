@@ -1,0 +1,17 @@
+*.DS_Store
+Extensions/gulp
+Extensions/node_modules
+Extensions/ns_npm_repository
+Extensions/distro.json
+Extensions/gulpfile.js
+Extensions/package-lock.json
+Extensions/package.json
+
+
+Theme/gulp
+Theme/node_modules
+Theme/ns_npm_repository
+Theme/distro.json
+Theme/gulpfile.js
+Theme/package-lock.json
+Theme/package.json

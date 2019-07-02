@@ -1,0 +1,114 @@
+/* Edited for Manor Theme */
+
+.cart-item-summary-label {
+	display: block; //reset
+}
+
+.cart-item-summary-item-list-actionable-container-qty {
+	display: flex;
+	align-items: center;
+}
+
+.cart-item-summary-item-list-actionable-label-qty {
+	flex: 1 1 50%;
+	display: none;
+
+	@extend .sc-label;
+	margin-bottom: 0;
+
+	@media (min-width: 500px) { //$screen-xs-min special for very small screens like iphone 5
+		display: inline-block;
+		vertical-align: middle;
+	}
+	@media (min-width: $screen-sm-min) {
+        flex: 1 1 40%;
+    }
+	@media (min-width: $screen-md-min) {
+        flex: 1 1 20%;
+    }
+}
+.cart-item-summary-item-list-actionable-input-qty {
+	flex: 1 1 50%;
+	@extend .sc-value;
+
+	@media (min-width: $screen-sm-min) {
+		display: inline-block;
+		vertical-align: middle;
+		flex: 1 1 60%;
+	}
+	@media (min-width: $screen-md-min) {
+        flex: 1 1 80%;
+    }
+}
+
+.cart-item-summary-item-list-actionable-amount{
+	//@extend .transaction-line-views-cell-actionable-amount;
+	display: flex;
+}
+
+.cart-item-summary-item-list-actionable-amount-label{
+	@extend .sc-label;
+	flex: 1 1 50%;
+	align-self: flex-end;
+	@media (min-width: $screen-sm-min) {
+        flex: 1 1 40%;
+    }
+	@media (min-width: $screen-md-min) {
+        flex: 1 1 20%;
+    }
+}
+
+.cart-item-summary-prices {
+	flex: 1 1 50%;
+	align-self: flex-end;
+	line-height: normal;
+	@media (min-width: $screen-sm-min) {
+        flex: 1 1 60%;
+    }
+	@media (min-width: $screen-md-min) {
+        flex: 1 1 80%;
+    }
+}
+
+.cart-item-summary-item-view-old-price{
+	@extend .transaction-line-views-price-old;
+}
+
+.cart-item-summary-amount-value{
+	font-weight: $sc-font-weight-semibold;
+    font-size: $sc-font-size-xxl;
+}
+
+.cart-item-summary-quantity-title-help{
+	clear: both;
+	margin-top: $sc-margin-lv1;
+	display: block;
+	font-weight:$sc-font-weight-light;
+}
+
+.cart-item-summary-quantity-add {
+	@extend .quantity-input-button-add;
+}
+
+.cart-item-summary-quantity-remove {
+	@extend .quantity-input-button-remove;
+}
+
+.cart-item-summary-quantity-value {
+ 	@extend .quantity-input;
+
+	padding: 7px !important;
+	border-color: $sc-color-secondary !important;
+	@media (min-width: $screen-md-min) {
+        height: auto !important;
+    }
+}
+
+.cart-item-summary-promocodes .cart-promocode-list-item-container{
+	@extend .transaction-line-views-cell-actionable-amount-label;
+	padding-left: 0;
+}
+
+.cart-item-summary-promocodes .cart-promocode-list-item-code-value {
+	@extend .sc-value;
+}

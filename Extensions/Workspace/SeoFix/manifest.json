@@ -1,0 +1,51 @@
+{
+	"name": "SeoFix",
+	"fantasyName": "SeoFix",
+	"vendor": "PS",
+	"type": "extension",
+	"target": "SCA,SCS,SCIS",
+	"version": "1.0.0",
+	"description": "Include the SeoFix  module in a extension",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/SeoFix.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/SeoFix/Configuration/DomainPrefix.Configuration.json"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/SeoFix/JavaScript/PS.SeoFix.SeoFix.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/SeoFix/JavaScript/Backbone.View.Site.js",
+					"Modules/SeoFix/JavaScript/Facets.Browse.View.Site.js",
+					"Modules/SeoFix/JavaScript/PS.SeoFix.SeoFix.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/SeoFix/SuiteScript/PS.SeoFix.SeoFix.js",
+		"files": [
+			"Modules/SeoFix/SuiteScript/PS.SeoFix.SeoFix.js",
+			"Modules/SeoFix/SuiteScript/SeoFix.ServiceController.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/PS/SeoFix@1.0.0",
+	"extension_id": "2201",
+	"activation_id": 7
+}

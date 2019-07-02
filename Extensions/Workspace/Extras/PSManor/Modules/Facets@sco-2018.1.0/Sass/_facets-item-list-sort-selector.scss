@@ -1,0 +1,6 @@
+/* Edited for Manor Theme */
+
+.facets-item-list-sort-selector {
+    @extend .list-header-filter-input;
+    @extend %facets-item-list-selector-styles;
+}

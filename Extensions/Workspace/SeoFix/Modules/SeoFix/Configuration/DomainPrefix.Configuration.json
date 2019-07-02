@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "domainSuffix",
+        "title": "Domain Suffix",
+        "group": "multiDomain",
+        "description": "Add domain suffix here to avoid duplication of content from SEO perspective"
+    },
+    "properties": {
+        "domainSuffix": {
+            "group": "multiDomain",
+            "subtab": "domainSuffix",
+            "type": "string",
+            "title": "Suffix"
+        }
+    }
+}

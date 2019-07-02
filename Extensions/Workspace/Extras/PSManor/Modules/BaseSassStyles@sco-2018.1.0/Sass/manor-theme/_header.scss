@@ -1,0 +1,60 @@
+// Header variables
+$sc-header-top-background-color: #EAEAEA; /* editable({"type": "color", "label": "Top section background"}) */
+$sc-header-height: 30px; /* editable({"type": "string", "label": "Height containing right hand links"}) */
+$sc-mobile-header-height: 70px; /* editable({"type": "string", "label": "Mobile height"}) */
+$sc-header-background-color: white; /* editable({"type": "color", "label": "Background for mobile/tablet view"}) */
+$sc-header-border-color: transparent; /* editable({"type": "color", "label": "Border"}) */
+$sc-header-border-width: 0; /* editable({"type": "string", "label": "Border size"}) */
+$sc-header-margin-bottom-desktop: $sc-margin-lv4;
+
+// Header logo variables
+$sc-mobile-header-logo-width: 85px; /* editable({"type": "string", "label": "Logo width - mobile"}) */
+$sc-desktop-header-logo-width: 85px; /* editable({"type": "string", "label": "Logo width - desktop"}) */
+$sc-mobile-header-logo-top-margin: 18px; /* editable({"type": "string", "label": "Logo top margin - mobile"}) */
+$sc-desktop-header-logo-top-margin: 5px; /* editable({"type": "string", "label": "Logo top margin - desktop"}) */
+$sc-mobile-header-logo-left-padding: $sc-padding-lv3; /* editable({"type": "string", "label": "Logo left padding - mobile"}) */
+
+// Header links variables
+$sc-header-link-font-family: $sc-font-family; /* editable({"type": "string", "label": "Link font family"}) */
+$sc-header-link-font-style: normal; /* editable({
+	"type": "string",
+	"label": "Link font style",
+	"options": [
+		{"value": "italic", "text": "italic"},
+		{"value": "normal", "text": "normal"},
+		{"value": "oblique", "text": "oblique"}
+	]
+}) */
+$sc-header-link-font-weight: $sc-font-weight-normal; /* editable({"type": "string", "label": "Link font-weight"}) */
+$sc-header-link-desktop-font-size: 0.8rem; /* editable({"type": "string", "label": "Link desktop font size"}) */
+$sc-header-link-font-size: 0.933rem; /* editable({"type": "string", "label": "Link mobile font size"}) */
+$sc-header-link-text-color: $sc-color-copy-dark; /* editable({"type": "color", "label": "Link"}) */
+$sc-header-link-hover-text-color: $sc-color-link; /* editable({"type": "color", "label": "Link hover"}) */
+$sc-header-link-active-text-color: $sc-color-link-active; /* editable({"type": "color", "label": "Link active"}) */
+$sc-header-link-text-transform: none; /* editable({
+	"type": "string",
+	"label": "Link text transform",
+	"options": [
+		{"value": "none", "text": "none"},
+		{"value": "uppercase", "text": "uppercase"},
+		{"value": "lowercase", "text": "lowercase"},
+		{"value": "capitalize", "text": "capitalize"}
+	]
+}) */
+$sc-header-banner-text-color: $sc-header-link-text-color; /* editable({"type": "color", "label": "Banner text"}) */
+
+// Header cart variables
+$sc-desktop-header-cart-open-text-color: $sc-neutral-shade-300; /* editable({"type": "color", "label": "Minicart total items when minicart menu visible"}) */
+
+// Header social icons
+$sc-header-icon-size: 20px;
+$sc-header-social-text-color: $sc-neutral-shade-300;
+$sc-header-social-icon-color: $sc-neutral-shade-300;
+$sc-header-social-icon-hover-color: $sc-neutral-shade;
+
+// Mobile header icons
+$sc-mobile-header-icon-color: $sc-color-copy-dark; /* editable({"type": "color", "label": "Icon"}) */
+$sc-mobile-header-icon-active-color: $sc-color-link; /* editable({"type": "color", "label": "Icon hover/active"}) */
+$sc-mobile-header-sidebar-link-color: white; /* editable({"type": "color", "label": "Mobile sidebar link"}) */
+$sc-mobile-header-border-color: transparent;
+$sc-mobile-header-border-width: 0;

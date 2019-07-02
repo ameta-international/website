@@ -1,0 +1,24 @@
+/* Edited for Manor Theme */
+
+.cart-item-actions-links {
+	margin-top: $sc-margin-lv4;
+
+	a {
+		font-size: $sc-font-size-m;
+		@media (min-width: $screen-sm-min) {
+		font-size: $sc-font-size-l;
+
+		&:hover {
+			color: $sc-color-secondary;
+		}
+	}
+}
+
+}
+
+.link-separator {
+	padding: 0 $sc-padding-lv1;
+	@media (min-width: $screen-sm-min) {
+		padding: 0 $sc-padding-lv2;
+	}
+}
