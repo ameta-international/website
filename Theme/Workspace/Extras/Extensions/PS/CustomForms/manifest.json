@@ -1,0 +1,65 @@
+{
+	"name": "CustomForms",
+	"fantasyName": "Custom Forms",
+	"vendor": "PS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.1.0",
+	"description": "CMS Custom form",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/CCTCustomForms.Service.ss"
+			]
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CCTCustomForms/Templates/customforms.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/CCTCustomForms/Sass/_customforms-cctcustomforms.scss"
+		},
+		"files": [
+			"Modules/CCTCustomForms/Sass/_customforms-cctcustomforms.scss",
+			"Modules/CCTCustomForms/Sass/_cctcustomforms.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/CCTCustomForms/JavaScript/CCTCustomForms.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/CCTCustomForms/JavaScript/CCTCustomForms.js",
+					"Modules/CCTCustomForms/JavaScript/CCTCustomForms.View.js",
+					"Modules/CCTCustomForms/JavaScript/CCTCustomForms.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/CCTCustomForms/SuiteScript/PS.CustomForms.CCTCustomForms.js",
+		"files": [
+			"Modules/CCTCustomForms/SuiteScript/PS.CustomForms.CCTCustomForms.js",
+			"Modules/CCTCustomForms/SuiteScript/CCTCustomForms.ServiceController.js",
+			"Modules/CCTCustomForms/SuiteScript/CCTCustomForms.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/PS/CustomForms@1.1.0",
+	"extension_id": "2301",
+	"activation_id": 7
+}

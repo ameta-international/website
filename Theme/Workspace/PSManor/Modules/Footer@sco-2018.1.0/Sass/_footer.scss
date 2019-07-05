@@ -1,0 +1,250 @@
+// Edited for Manor Theme
+
+footer {
+    margin-top: 20px;
+}
+
+.footer-wrapper {
+    background: $sc-footer-background-color;
+}
+
+.footer-content-wrapper {
+    @extend .container;
+	@include site-max-width-container;
+    padding: 40px;
+
+    color: $sc-footer-text-color;
+
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-sm-min) {
+        flex-direction: row;
+        padding: 40px 50px;
+    }
+}
+
+.footer-social-news {
+    text-align: center;
+    width: 100%;
+    flex: auto;
+    order: 1;
+
+    @media (min-width: $screen-sm-min) {
+        width: 40%;
+        order: 2;
+        text-align: left;
+    }
+
+    @media (min-width: $screen-md-min) {
+        width: 30%;
+        order: 2;
+        text-align: left;
+    }
+
+    & h4 {
+        color: $sc-footer-text-color;
+    }
+}
+
+.footer-social {
+    margin-bottom: 15px;
+}
+
+.footer-content {
+	width: 100%;
+    flex: auto;
+    order: 2;
+    margin-top: 30px;
+
+    @media (min-width: $screen-sm-min) {
+        width: 60%;
+        order: 1;
+        margin-top: 0;
+    }
+
+    @media (min-width: $screen-md-min) {
+        width: 70%;
+        order: 1;
+        margin-top: 0;
+    }
+}
+
+.footer-content-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-content-nav-list {
+	width: 50%;
+    flex: auto;
+    list-style: none;
+
+    @media (min-width: $screen-sm-min) {
+        width: 25%;
+    }
+
+    &:nth-child(1),
+    &:nth-child(3) {
+        padding-right: 15px;
+        @media (min-width: $screen-sm-min) {
+            padding-right: 5px;
+        }
+    }
+
+    &:nth-child(2),
+    &:nth-child(4) {
+        padding-left: 15px;
+        @media (min-width: $screen-sm-min) {
+            padding-left: 0;
+            padding-right: 5px;
+        }
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+        margin-top: 15px;
+        @media (min-width: $screen-sm-min) {
+            margin-top: 0;
+        }
+    }
+}
+
+.footer-content-nav-list > li {
+    font-size: $sc-font-size-xs;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: $sc-font-size-m;
+    }
+}
+
+.footer-column-heading {
+    padding-bottom: $sc-padding-lv2;
+    color: $sc-footer-text-color;
+}
+
+.footer-column-link {
+    color: $sc-footer-link-color;
+    font-weight: $sc-font-weight-normal;
+    &:hover,
+    &:focus {
+        color: $sc-footer-link-color-hover;
+    }
+}
+
+.footer-content-newsletter {
+    & p {
+        font-size: $sc-font-size-m;
+        color: $sc-footer-text-color;
+    }
+}
+
+.footer-content-newsletter {
+    & p {
+        font-size: $sc-font-size-s;
+        padding-bottom: 10px;
+    }
+    & span {
+        color: $sc-color-secondary;
+        font-weight: 700;
+    }
+    & h5 {
+        color: $sc-footer-fields-text-color; //hidden
+    }
+
+    @media (max-width: $screen-sm-max) {
+        padding: 0;
+    }
+}
+
+.footer-content-copyright-wrapper {
+    background-color: $sc-footer-copyright-background-color;
+    color: $sc-footer-copyright-text-color;
+}
+
+.footer-content-copyright {
+    @extend .container;
+	@include site-max-width-container;
+    padding-left: $sc-padding-lv3;
+    padding-right: $sc-padding-lv3;
+
+    font-size: $sc-font-size-s;
+    font-weight: $sc-font-weight-light;
+    line-height: 40px;
+
+    @media (min-width: $screen-sm-min) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+// Native Footer Links
+.footer-links {
+    width: 100%;
+    flex: auto;
+    order: 1;
+
+    @media (min-width: $screen-sm-min) {
+        width: 20%;
+    }
+}
+
+.footer-content-links-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    & > li {
+        flex: 1;
+        display: inline-block;
+        text-align: center;
+        @media (min-width: $screen-sm-min) {
+            text-align: left;
+            flex: 1;
+        }
+    }
+
+    @media (min-width: $screen-sm-min) {
+        justify-content: flex-start;
+    }
+
+}
+
+// Social Media Links
+.footer-content-social-list {
+    margin-top: 10px;
+
+    & > li {
+        flex: 0;
+        display: inline-block;
+        margin-right: 20px;
+        @media (min-width: $screen-sm-min) {
+            flex: 1;
+        }
+    }
+
+    & > li:last-child {
+        margin-right: 0;
+    }
+
+    a {
+        background-color: $sc-footer-icon-background-color;
+        color: $sc-footer-icon-color;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        display: block;
+        font-size: 1.3rem;
+    }
+
+}
+
+.footer-content-social-icon {
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    padding-top: 8px;
+    &.icon-instagram {
+        padding-left: 3px;
+    }
+}

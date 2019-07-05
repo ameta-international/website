@@ -1,0 +1,49 @@
+/* Home Carousel variables */
+$sc-home-cta-background-color:lighten($sc-color-secondary, 77); /* editable({"type": "color", "label": "Carousel caption background"}) */
+$sc-home-cta-title-font: $sc-theme-secondary-font; /* editable({"type": "string", "label": "Carousel font family"}) */
+$sc-home-cta-title-font-weight: 300; /* editable({
+	"type": "string",
+	"label": "Carousel title font weight",
+	"options": [
+		{"value": "300", "text": "light"},
+		{"value": "400", "text": "regular"},
+		{"value": "700", "text": "bold"}
+	]
+}) */
+$sc-home-cta-title-font-style: normal; /* editable({
+	"type": "string",
+	"label": "Carousel title font style",
+	"options": [
+		{"value": "italic", "text": "italic"},
+		{"value": "normal", "text": "normal"},
+		{"value": "oblique", "text": "oblique"}
+	]
+}) */
+$sc-home-cta-title-text-transform: uppercase; /* editable({
+	"type": "string",
+	"label": "Carousel caption text transform",
+	"options": [
+		{"value": "none", "text": "none"},
+		{"value": "uppercase", "text": "uppercase"},
+		{"value": "lowercase", "text": "lowercase"},
+		{"value": "capitalize", "text": "capitalize"}
+	]
+}) */
+$sc-home-cta-title-size-mobile: 2.133rem; /* editable({"type": "string", "label": "Carousel caption size - mobile view"}) */
+$sc-home-cta-title-size: 3.33rem; /* editable({"type": "string", "label": "Carousel caption size - desktop view"}) */
+$sc-home-cta-title-color: $sc-color-secondary; /* editable({"type": "color", "label": "Carousel caption title"}) */
+$sc-home-cta-text-color: $sc-color-secondary; /* editable({"type": "color", "label": "Carousel caption text"}) */
+
+/* Home Infoblocks variables */
+$sc-infoblock-width: 100%; /* editable({"type": "string", "label": "Infoblocks mobile width"}) */
+$sc-infoblock-desktop-width: 25%; /* editable({"type": "string", "label": "Infoblocks desktop width"}) */
+
+/* Carousel Icons */
+$sc-home-carousel-icons-display: none; /* editable({
+	"type": "string",
+	"label": "Display Carousel Icons",
+	"options": [
+		{"value": "none", "text": "Hide"},
+		{"value": "block", "text": "Show"}
+	]
+}) */

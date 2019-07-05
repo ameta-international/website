@@ -1,0 +1,41 @@
+/*
+MERCHANDISING ZONE ITEM
+Default merchandising template styling merchzone_default.txt
+*/
+
+// Old merchzone with no slider
+.cms-content aside {
+    .row-fluid {
+        display: flex;
+        flex-wrap: wrap;
+
+        & div {
+            flex: 0 0 50%;
+            @media (min-width: $screen-sm-min) {
+        		flex: 0 0 25%;
+        	}
+        }
+
+        & .item-cell {
+            padding: 10px;
+        }
+
+        & h5,
+        & .btn {
+            display: none;
+        }
+    }
+}
+
+.cms-content-text {
+    padding: $sc-padding-lv2 0;
+}
+
+.cms-content-text h1,
+.cms-content-text h2,
+.cms-content-text h3,
+.cms-content-CMS_TEXT h1,
+.cms-content-CMS_TEXT h2,
+.cms-content-CMS_TEXT h3 {
+    @extend .featured-title;
+}

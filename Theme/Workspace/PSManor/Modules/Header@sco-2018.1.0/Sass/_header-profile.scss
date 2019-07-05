@@ -1,0 +1,82 @@
+// Edited for Manor Theme
+
+.header-profile-welcome-link,
+.header-profile-login-link,
+.header-profile-register-link,
+.header-profile-loading-link {
+	@extend %header-link;
+	padding: 0 $sc-padding-lv2;
+}
+
+.header-profile-message {
+	display: none;
+
+	@media (min-width: $screen-md-min){
+		display: inline-block;
+		color: $sc-color-copy-light;
+		padding: 0 $sc-padding-lv2;
+	}
+}
+
+.header-profile-login-link {
+	padding-right: 0;
+}
+
+.header-profile-register-link {
+	padding-left: 0;
+	display: inline-block;
+}
+
+.header-profile-welcome-link-name{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.header-profile-welcome-user-icon{
+	display: none;
+}
+
+.header-profile-welcome-carret-icon{
+	display:none;
+}
+
+//////////////////////////////////////////////////////////
+//login register
+
+.header-profile-menu-login{
+	color: $sc-mobile-header-sidebar-link-color;
+	font-size: $sc-header-link-font-size;
+	font-weight: $sc-header-link-font-weight;
+
+	@media (min-width: $screen-md-min) {
+		color: $sc-header-link-text-color;
+        font-size: $sc-header-link-desktop-font-size;
+	}
+}
+
+.header-profile-menu-login li{
+	display:inline-block;
+}
+
+.header-profile-login-icon{
+	@extend .fa;
+	@extend %fa-user;
+	font-size: $sc-font-size-m;
+}
+
+//////////////////////////////////////////////////////////
+//my account menu
+.header-profile-menu-myaccount-container {
+	@extend .header-menu-level-container;
+	background-color: $sc-neutral-shade-0;
+	z-index: 1002;
+	right: 0;
+}
+
+.open .header-profile-menu-myaccount-container {
+	padding: $sc-padding-lv3 $sc-padding-lv3 $sc-padding-lv7;
+}
+
+.header-profile-loading-icon{}
+.header-profile-loading-indicator{}

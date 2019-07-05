@@ -1,0 +1,20 @@
+/* Edited for Manor Theme */
+
+.recently-viewed-items {
+	position:relative;
+	h3 {
+		@extend .featured-title;
+	}
+	.bx-controls-direction{
+		text-align:right;
+		margin-bottom:$sc-margin-lv8;
+	}
+}
+
+ul.recently-viewed-row-cell li{
+	display:inline-block;
+}
+
+.recently-viewed-cell-item-cell {
+	@extend .item-relations-cell;
+}

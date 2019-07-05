@@ -1,0 +1,35 @@
+/* Edited for Manor Theme */
+
+.product-details-quantity-options {
+	margin-top: 10px;
+    clear:both;
+    @extend .clearfix;
+
+	[data-validation-error="block"] {
+		margin-top: $sc-margin-lv2;
+	}
+}
+
+.product-details-quantity-options-title-help {
+	clear: both;
+	display: block;
+	font-weight:$sc-font-weight-light;
+	margin: $sc-margin-lv2 0;
+}
+
+.product-details-quantity-add {
+	@extend .quantity-input-button-add;
+}
+
+.product-details-quantity-remove {
+	@extend .quantity-input-button-remove;
+}
+
+.product-details-quantity-value {
+	@extend .quantity-input;
+}
+
+.product-details-quantity-container {
+    @extend .quantity-input-container;
+    @extend .clearfix;
+}

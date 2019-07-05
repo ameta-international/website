@@ -1,0 +1,12 @@
+/* Edited for Manor Theme */
+
+%facets-item-list-selector-styles {
+    height: auto;
+    padding: $sc-padding-lv1 $sc-padding-lv6 $sc-padding-lv1 $sc-padding-lv1;
+    background-position: 100% 11px;
+}
+
+.facets-item-list-show-selector {
+    @extend .list-header-filter-input;
+    @extend %facets-item-list-selector-styles;
+}

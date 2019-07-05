@@ -1,0 +1,113 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.contact-us-landing-page-container {
+	@extend .container;
+	padding-bottom: $sc-padding-lv4;
+
+	@media (min-width: $screen-md-min) {
+		padding-left: $sc-padding-lv7;
+		padding-right: $sc-padding-lv7;
+	}
+}
+
+.contact-us-landing-page-header {
+	margin-bottom: $sc-padding-lv4;
+}
+
+.contact-us-landing-page-header-image {
+	margin-top: $sc-padding-lv3;
+}
+
+.contact-us-landing-page-header-cms {
+	margin-top: $sc-padding-lv2;
+}
+
+.contact-us-landing-page-content {}
+
+.contact-us-landing-page-content p {}
+
+.contact-us-landing-page-contact-info-blocks-container {
+	@extend .row;
+	margin-top: $sc-padding-lv8;
+	margin-bottom: $sc-padding-lv8;
+}
+
+.contact-us-landing-page-content .contact-us-landing-page-contact-info-block {
+	@extend .col-xs-6;
+	@extend .col-sm-3;
+	@extend .col-md-3;
+
+	@media (max-width: $screen-xs-min) {
+		width: 100%;
+	}
+}
+
+.contact-us-landing-page-contact-info-block {
+	border-right: 1px solid $sc-color-theme-border;
+
+	&:last-child {
+		border-right: 0;
+	}
+
+	@media (max-width: $sc-padding-lv2) {
+		margin-bottom: $sc-padding-lv4;
+	}
+}
+
+.contact-us-landing-page-contact-info-block-content {
+	text-align: center;
+	padding: 0 $sc-padding-lv2;
+}
+
+.contact-us-landing-page-contact-info-block-image {
+	margin-bottom: $sc-padding-lv2;
+}
+
+.contact-us-landing-page-contact-info-block-title {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: $sc-padding-lv2;
+}
+
+.contact-us-landing-page-contact-info-block-text {
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.contact-us-landing-page-additional-contact-info-blocks-container {
+	@extend .row;
+	background: lighten($sc-color-theme-background, 3.5);
+	padding: $sc-padding-base * 10 $sc-padding-lv4;
+}
+
+.contact-us-landing-page-additional-contact-info-block {
+	@extend .col-xs-6;
+	@extend .col-sm-6;
+	@extend .col-md-6;
+	text-align: center;
+
+	@media (max-width: $screen-xs-min) {
+		width: 100%;
+	}
+
+	&:nth-child(odd) {
+		clear: both;
+	}
+
+	margin-top: $sc-padding-lv2 * 3;
+	margin-bottom: $sc-padding-lv2 * 3;
+}
+
+.contact-us-landing-page-additional-contact-info-block-title {
+	font-weight: $sc-font-weight-bold;
+}
+
+.contact-us-landing-page-additional-contact-info-block-title,
+.contact-us-landing-page-additional-contact-info-block-text {
+	line-height: 1.8;
+}

@@ -1,0 +1,25 @@
+// Edited for Manor Theme
+
+.header-simplified-header {
+	padding: $sc-padding-lv3 0;
+	background-color: $sc-main-navigation-background-color;
+}
+
+.header-simplified-header-logo {
+	text-align: center;
+
+	// resize image to fit container
+	& .header-logo {
+		display: initial;
+	}
+	& .header-logo-image{
+		width: $sc-mobile-header-logo-width - $sc-mobile-header-logo-left-padding;
+		display: initial;
+		max-width: 100%;
+		max-height: 100%;
+
+		@media (min-width: $screen-md-min) {
+            width: $sc-desktop-header-logo-width;
+		}
+	}
+}
