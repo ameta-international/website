@@ -1,0 +1,21 @@
+{
+"$sc-header-top-background-color": "#52BAD5",
+"$sc-header-link-text-color": "white",
+"$sc-header-link-hover-text-color": "#1E2129",
+"$sc-header-background-color": "#1E2129",
+"$sc-color-primary": "#52BAD5",
+"$sc-button-primary-hover-background-color": "#489AB0",
+"$sc-footer-background-color": "#1E2129",
+"$sc-footer-buttons-background-color": "#1E2129",
+"$sc-footer-icon-color": "#1E2129",
+"$sc-footer-fields-border-color": "white",
+"$sc-footer-text-color": "white",
+"$sc-footer-link-color-hover": "#52BAD5",
+"$sc-footer-copyright-background-color": "#303130",
+"$sc-main-navigation-background-color": "#1E2129",
+"$sc-main-navigation-link-color": "white",
+"$sc-desktop-header-cart-open-text-color": "white",
+"$sc-mobile-header-icon-color": "white",
+"$sc-featured-title-background-color": "#303130",
+"$sc-header-banner-text-color": "white"
+}

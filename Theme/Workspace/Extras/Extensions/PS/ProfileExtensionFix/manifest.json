@@ -1,0 +1,27 @@
+{
+	"name": "ProfileExtensionFix",
+	"fantasyName": "ProfileExtensionFix",
+	"vendor": "PS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.1",
+	"description": "Fix the profile update bug",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ProfileExtensionFix/SuiteScript/PS.ProfileExtensionFix.ProfileExtensionFix.js",
+		"files": [
+			"Modules/ProfileExtensionFix/SuiteScript/PS.ProfileExtensionFix.ProfileExtensionFix.js",
+			"Modules/ProfileExtensionFix/SuiteScript/Profile.Model.Fix.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/PS/ProfileExtensionFix@1.0.1",
+	"extension_id": "2501",
+	"activation_id": 7
+}

@@ -1,0 +1,59 @@
+{
+	"name": "ContactUsLandingPageExtension",
+	"fantasyName": "Contact Us Landing Page - SD",
+	"vendor": "CS-eComm",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "A template for Contact Us page that can be configurable via SCA Configuration",
+	"assets": {
+		"img": {
+			"files": [
+				"ContactUsLandingPage/img/qs-contact-icon-building.png",
+				"ContactUsLandingPage/img/qs-contact-icon-envelope.png",
+				"ContactUsLandingPage/img/qs-contact-icon-paper.png",
+				"ContactUsLandingPage/img/qs-contact-icon-phone.png"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/ContactUsLandingPage/Configuration/ContactUsLandingPage.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ContactUsLandingPage/Templates/contact_us_landing_page.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/ContactUsLandingPage/Sass/shopping.scss"
+		},
+		"files": [
+			"Modules/ContactUsLandingPage/Sass/shopping.scss",
+			"Modules/ContactUsLandingPage/Sass/_contact-us-landing-page.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/ContactUsLandingPage/JavaScript/SC.ContactUsLandingPage.1.0.0.ContactUsLandingPage.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ContactUsLandingPage/JavaScript/SC.ContactUsLandingPage.1.0.0.ContactUsLandingPage.js",
+					"Modules/ContactUsLandingPage/JavaScript/ContactUsLandingPage.Router.js",
+					"Modules/ContactUsLandingPage/JavaScript/ContactUsLandingPage.View.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteBundles/Bundle 248721/extensions/CS-eComm/ContactUsLandingPageExtension@1.0.0",
+	"extension_id": "701",
+	"activation_id": 7
+}

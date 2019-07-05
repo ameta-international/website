@@ -1,0 +1,89 @@
+
+.featuredproductcct-layout {
+  margin-bottom: $sc-margin-lv4;
+  margin-top: $sc-margin-lv4;
+
+  .product-content {
+    margin-top: 10px;
+    word-wrap: break-word;
+  }
+
+  .product-image{
+    max-height: 550px;
+  }
+
+  .in-stock-icon{
+    color: darkgreen;
+    @extend .fa;
+    @extend %fa-check-circle;
+  }
+
+  .out-of-stock-icon{
+    color: darkred;
+    @extend .fa;
+    @extend %fa-times-circle;
+  }
+
+  .product-formatted-price {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .stock-availability{
+    background-color: $sc-color-info-background;
+    border-radius: 3px;
+    padding: 2px 4px;
+  }
+
+  .button-container {
+    width: 100%;
+    margin-top: 20px;
+
+    @media (min-width: $screen-xs-min) {
+      padding: 0;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 20px !important;
+      position: relative !important;
+      bottom: 0px;
+    }
+
+
+  }
+
+  .button-style-one {
+    @extend .button-primary;
+    @extend .button-large;
+    @media (min-width: $screen-xs-min) {
+      width: auto;
+      max-width: 100%;
+      position: relative;
+    }
+  }
+
+  .button-style-two {
+    @extend .button-secondary;
+    @extend .button-large;
+    @media (min-width: $screen-xs-min) {
+      width: auto;
+      max-width: 100%;
+      position: relative;
+    }
+  }
+
+  .ribbon {
+    @extend h2;
+    position: absolute;
+    top: 30px;
+    color: $sc-color-secondary;
+    background-color: $sc-color-theme-background;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+
+    word-wrap: break-word;
+    max-width: calc(100% - 30px);
+    display: inline-block;
+  }
+
+}

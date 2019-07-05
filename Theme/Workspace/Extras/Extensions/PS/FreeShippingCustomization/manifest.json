@@ -1,0 +1,50 @@
+{
+	"name": "FreeShippingCustomization",
+	"fantasyName": "Free Shipping Customization",
+	"vendor": "PS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.1",
+	"description": "Remove free shipping costs from Checkout",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/FreeShippingCustomization/JavaScript/PS.ShippingCustomization.ShippingCustomization.js",
+			"myaccount": "Modules/FreeShippingCustomization/JavaScript/PS.ShippingCustomization.ShippingCustomization.js",
+			"checkout": "Modules/FreeShippingCustomization/JavaScript/PS.ShippingCustomization.ShippingCustomization.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/FreeShippingCustomization/JavaScript/PS.ShippingCustomization.ShippingCustomization.js",
+					"Modules/FreeShippingCustomization/JavaScript/ShippingCustomization.Helper.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/FreeShippingCustomization/JavaScript/PS.ShippingCustomization.ShippingCustomization.js",
+					"Modules/FreeShippingCustomization/JavaScript/ShippingCustomization.Helper.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/FreeShippingCustomization/JavaScript/PS.ShippingCustomization.ShippingCustomization.js",
+					"Modules/FreeShippingCustomization/JavaScript/ShippingCustomization.Helper.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/PS/FreeShippingCustomization@1.0.1",
+	"extension_id": "2302",
+	"activation_id": 7
+}

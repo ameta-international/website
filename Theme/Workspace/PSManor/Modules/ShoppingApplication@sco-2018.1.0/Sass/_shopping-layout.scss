@@ -1,0 +1,35 @@
+/* Edited for Manor Theme */
+
+.shopping-layout {
+	@extend %sc-layout;
+}
+
+.shopping-layout-header {
+	@include common-header;
+}
+
+.shopping-layout-footer {
+	@extend %sc-footer !optional;
+}
+
+.shopping-layout-breadcrumb {
+    position: relative;
+    z-index: 10;
+}
+
+.shopping-layout-breadcrumb,
+.shopping-layout-notifications,
+.shopping-layout-content {
+	@extend .container;
+	@include site-max-width-container;
+}
+
+.shopping-layout-breadcrumb, .shopping-layout-notifications {
+    padding-left: $sc-content-left-padding;
+    padding-right: $sc-content-right-padding;
+}
+
+.shopping-layout-no-javascript-msg {
+	@extend .message-warning;
+	width: 100%;
+}

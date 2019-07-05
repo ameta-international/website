@@ -1,0 +1,113 @@
+{
+	"name": "FeaturedProduct",
+	"fantasyName": "Featured Product",
+	"vendor": "SuiteCommerce",
+	"version": "1.0.1",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "Highlight a recommended product on your website.",
+	"skins": [],
+	"assets": {
+		"img": {
+			"files": [
+				"img/cct_netsuite_featuredproductcct_icon.svg"
+			]
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/FeaturedProductCCT/Sass/_featuredproduct-featuredproductcct.scss",
+			"myaccount": "Modules/FeaturedProductCCT/Sass/_featuredproduct-featuredproductcct.scss",
+			"checkout": "Modules/FeaturedProductCCT/Sass/_featuredproduct-featuredproductcct.scss"
+		},
+		"files": [
+			"Modules/FeaturedProductCCT/Sass/_featuredproduct-featuredproductcct.scss",
+			"Modules/FeaturedProductCCT/Sass/_featuredproductcct.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/FeaturedProductCCT/Templates/netsuite_featuredproduct_featuredproductcct.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/FeaturedProductCCT/Templates/netsuite_featuredproduct_featuredproductcct.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/FeaturedProductCCT/Templates/netsuite_featuredproduct_featuredproductcct.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/FeaturedProductModule/JavaScript/NetSuite.FeaturedProduct.FeaturedProductModule.js",
+			"myaccount": "Modules/FeaturedProductModule/JavaScript/NetSuite.FeaturedProduct.FeaturedProductModule.js",
+			"checkout": "Modules/FeaturedProductModule/JavaScript/NetSuite.FeaturedProduct.FeaturedProductModule.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/FeaturedProductModule/JavaScript/NetSuite.FeaturedProduct.FeaturedProductModule.js",
+					"Modules/FeaturedProductCCT/JavaScript/NetSuite.FeaturedProduct.FeaturedProductCCT.js",
+					"Modules/FeaturedProductCCT/JavaScript/FeaturedProductCCT.View.js",
+					"Modules/Item/JavaScript/Item.Collection.js",
+					"Modules/Item/JavaScript/Item.ImageHelper.js",
+					"Modules/Item/JavaScript/Item.Model.js",
+					"Modules/Item/JavaScript/Item.Option.Collection.js",
+					"Modules/Item/JavaScript/Item.Option.Model.js",
+					"Modules/Item/JavaScript/Item.Option.Value.Collection.js",
+					"Modules/Item/JavaScript/Item.Option.Value.Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/FeaturedProductModule/JavaScript/NetSuite.FeaturedProduct.FeaturedProductModule.js",
+					"Modules/FeaturedProductCCT/JavaScript/NetSuite.FeaturedProduct.FeaturedProductCCT.js",
+					"Modules/FeaturedProductCCT/JavaScript/FeaturedProductCCT.View.js",
+					"Modules/Item/JavaScript/Item.Collection.js",
+					"Modules/Item/JavaScript/Item.ImageHelper.js",
+					"Modules/Item/JavaScript/Item.Model.js",
+					"Modules/Item/JavaScript/Item.Option.Collection.js",
+					"Modules/Item/JavaScript/Item.Option.Model.js",
+					"Modules/Item/JavaScript/Item.Option.Value.Collection.js",
+					"Modules/Item/JavaScript/Item.Option.Value.Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/FeaturedProductModule/JavaScript/NetSuite.FeaturedProduct.FeaturedProductModule.js",
+					"Modules/FeaturedProductCCT/JavaScript/NetSuite.FeaturedProduct.FeaturedProductCCT.js",
+					"Modules/FeaturedProductCCT/JavaScript/FeaturedProductCCT.View.js",
+					"Modules/Item/JavaScript/Item.Collection.js",
+					"Modules/Item/JavaScript/Item.ImageHelper.js",
+					"Modules/Item/JavaScript/Item.Model.js",
+					"Modules/Item/JavaScript/Item.Option.Collection.js",
+					"Modules/Item/JavaScript/Item.Option.Model.js",
+					"Modules/Item/JavaScript/Item.Option.Value.Collection.js",
+					"Modules/Item/JavaScript/Item.Option.Value.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "ExtensionBundle.js",
+		"files": [
+			"ExtensionBundle.js"
+		]
+	},
+	"path": "SuiteBundles/Bundle 248721/extensions/SuiteCommerce/FeaturedProduct@1.0.1",
+	"extension_id": "1701",
+	"activation_id": 7
+}

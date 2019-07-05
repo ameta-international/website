@@ -1,0 +1,25 @@
+// Footer variables
+$sc-footer-background-color: lighten($sc-color-secondary, 77); /* editable({"type": "color", "label": "Background"}) */
+$sc-footer-text-color: $sc-color-copy-dark; /* editable({"type": "color", "label": "Text"}) */
+
+// Link variables
+$sc-footer-link-color: $sc-footer-text-color; /* editable({"type": "color", "label": "Link"}) */
+$sc-footer-link-color-hover: $sc-color-copy; /* editable({"type": "color", "label": "Link hover"}) */
+$sc-footer-icon-background-color: $sc-footer-text-color; /* editable({"type": "color", "label": "Icon background"}) */
+$sc-footer-icon-color: white; /* editable({"type": "color", "label": "Icon"}) */
+
+// Input fields variables
+$sc-footer-fields-background-color: white; /* editable({"type": "color", "label": "Input background"}) */
+$sc-footer-fields-border-color: $sc-neutral-shade-700; /* editable({"type": "color", "label": "Input border"}) */
+$sc-footer-fields-text-color: $sc-neutral-shade-300; /* editable({"type": "color", "label": "Input text"}) */
+
+// Buttons variables
+$sc-footer-buttons-background-color: white; /* editable({"type": "color", "label": "Buttons background"}) */
+$sc-footer-buttons-text-color: $sc-color-primary; /* editable({"type": "color", "label": "Buttons text"}) */
+$sc-footer-buttons-border-color: $sc-footer-buttons-text-color; /* editable({"type": "color", "label": "Buttons border"}) */
+$sc-footer-buttons-background-hover-color: $sc-footer-buttons-text-color; /* editable({"type": "color", "label": "Buttons background hover"}) */
+$sc-footer-buttons-text-hover-color: $sc-footer-buttons-background-color; /* editable({"type": "color", "label": "Buttons text hover"}) */
+
+// Copyright color
+$sc-footer-copyright-text-color: $sc-neutral-shade-0; /* editable({"type": "color", "label": "Copyright text"}) */
+$sc-footer-copyright-background-color: $sc-neutral-shade-700; /* editable({"type": "color", "label": "Copyright background"}) */

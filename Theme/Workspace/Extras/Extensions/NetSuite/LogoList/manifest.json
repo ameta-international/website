@@ -1,0 +1,98 @@
+{
+	"name": "LogoList",
+	"fantasyName": "Logo List",
+	"vendor": "NetSuite",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.1",
+	"description": "Add a list of images with links and texts to your website.",
+	"assets": {
+		"img": {
+			"files": [
+				"img/cct_netsuite_logolistcct_icon.svg"
+			]
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/LogoListCCT/Templates/netsuite_logolist_logolistcct.tpl",
+					"Modules/LogoListCCT/Templates/netsuite_logolist_logo.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/LogoListCCT/Templates/netsuite_logolist_logolistcct.tpl",
+					"Modules/LogoListCCT/Templates/netsuite_logolist_logo.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/LogoListCCT/Templates/netsuite_logolist_logolistcct.tpl",
+					"Modules/LogoListCCT/Templates/netsuite_logolist_logo.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/LogoListCCT/Sass/_logolist-logolistcct.scss",
+			"myaccount": "Modules/LogoListCCT/Sass/_logolist-logolistcct.scss",
+			"checkout": "Modules/LogoListCCT/Sass/_logolist-logolistcct.scss"
+		},
+		"files": [
+			"Modules/LogoListCCT/Sass/_logolist-logolistcct.scss",
+			"Modules/LogoListCCT/Sass/_logolistcct.scss",
+			"Modules/BxSlider4.2.14/jquery.bxslider.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/LogoListModule/JavaScript/NetSuite.LogoList.LogoListModule.js",
+			"myaccount": "Modules/LogoListModule/JavaScript/NetSuite.LogoList.LogoListModule.js",
+			"checkout": "Modules/LogoListModule/JavaScript/NetSuite.LogoList.LogoListModule.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/LogoListModule/JavaScript/NetSuite.LogoList.LogoListModule.js",
+					"Modules/LogoListCCT/JavaScript/NetSuite.LogoList.LogoListCCT.js",
+					"Modules/LogoListCCT/JavaScript/LogoListCCT.View.js",
+					"Modules/LogoListCCT/JavaScript/LogoListCCT.Utils.js",
+					"Modules/BxSlider4.2.14/jquery.bxslider.js",
+					"Modules/LogoListCCT/JavaScript/LogoListCCT.Logo.View.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/LogoListModule/JavaScript/NetSuite.LogoList.LogoListModule.js",
+					"Modules/LogoListCCT/JavaScript/NetSuite.LogoList.LogoListCCT.js",
+					"Modules/LogoListCCT/JavaScript/LogoListCCT.View.js",
+					"Modules/LogoListCCT/JavaScript/LogoListCCT.Utils.js",
+					"Modules/BxSlider4.2.14/jquery.bxslider.js",
+					"Modules/LogoListCCT/JavaScript/LogoListCCT.Logo.View.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/LogoListModule/JavaScript/NetSuite.LogoList.LogoListModule.js",
+					"Modules/LogoListCCT/JavaScript/NetSuite.LogoList.LogoListCCT.js",
+					"Modules/LogoListCCT/JavaScript/LogoListCCT.View.js",
+					"Modules/LogoListCCT/JavaScript/LogoListCCT.Utils.js",
+					"Modules/BxSlider4.2.14/jquery.bxslider.js",
+					"Modules/LogoListCCT/JavaScript/LogoListCCT.Logo.View.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteBundles/Bundle 248721/extensions/NetSuite/LogoList@1.0.1",
+	"extension_id": "1801",
+	"activation_id": 7
+}

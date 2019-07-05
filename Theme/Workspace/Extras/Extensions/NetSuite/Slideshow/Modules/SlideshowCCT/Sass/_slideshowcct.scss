@@ -1,0 +1,212 @@
+
+.slideshow-cct-container {
+  position: relative;
+  margin-bottom: $sc-margin-lv4;
+  margin-top: $sc-margin-lv4;
+  word-wrap: break-word;
+
+  @media (min-width: $screen-xs-min) {
+    margin-bottom: $sc-margin-lv1;
+  }
+
+  .bx-pager {
+    a {
+      color: $sc-color-theme-500 !important;
+      background-color: $sc-color-theme-500 !important;
+      width: 10px !important;
+      height: 10px !important;
+      border-radius: 100% !important;
+      font-size: 0;
+      text-indent: -9999px;
+    }
+    a.active {
+      background-color: $sc-color-secondary;
+    }
+  }
+
+  .slideshow-prev-icon, .slideshow-next-icon {
+    position: absolute;
+    top: 40%;
+    width: $sc-target-size-mobile;
+    height: $sc-target-size-mobile;
+    font-size: 50px;
+    color: $sc-color-theme-500;
+  }
+
+  .slideshow-next-icon {
+    right: 15px;
+    text-align: right;
+    @extend .icon-angle-right;
+  }
+
+  .slideshow-prev-icon {
+    left: 15px;
+    @extend .icon-angle-left;
+  }
+
+  .content {
+    position: relative;
+
+    @media (max-width: $screen-xs-min) {
+      padding: 0;
+    }
+  }
+
+  .content-light {
+    background-color: #FFFFFF;
+  }
+
+  .content-dark {
+    background-color: #000000;
+  }
+
+  .crop-height {
+    max-width: 1600px;
+    min-height: 50px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  img.scale {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto !important;
+    -ms-interpolation-mode: bicubic;
+  }
+
+  .bg-image-wedding {
+    -ms-background-position-x: center;
+    -ms-background-position-y: bottom;
+    background-position: center center;
+    background-size: cover;
+    -ms-behavior: url(backgroundsize.min.htc);
+  }
+
+  .bg-center-bottom {
+    background-position: center bottom;
+  }
+
+  .bg-center-top {
+    background-position: center top;
+  }
+
+  .bg-center-center {
+    background-position: center center;
+  }
+
+  .bg-position-wedding {
+    background-position: 30% 60%;
+  }
+
+  .content-box {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    border-style: groove;
+    width: 60%;
+
+    @media (max-width: $screen-xs-min) {
+      width: 90% !important;
+      left: 50% !important;
+      text-align: center !important;
+    }
+  }
+
+  .content-box-center {
+    left: 50%;
+    text-align: center;
+  }
+
+  .content-box-left {
+    left: 35%;
+    text-align: left;
+  }
+
+  .content-box-right {
+    right: -25%;
+    text-align: right;
+  }
+
+  .invisible {
+    visibility: hidden;
+  }
+
+  .transparent {
+    zoom: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+
+  .image-opacity {
+    opacity: 0.7;
+  }
+
+  .content-color-text-light {
+    color: $sc-color-copy-light;
+    p, h1, h2, h3, h4, h5, h6, blockquote, a {
+      color: $sc-color-copy-light;
+    }
+  }
+
+  .content-color-text-dark {
+    color: $sc-color-copy-dark;
+    p, h1, h2, h3, h4, h5, h6, blockquote, a {
+      color: $sc-color-copy-dark;
+    }
+  }
+
+  .text-content {
+    margin-bottom: 20px;
+  }
+
+  .button-container {
+    width: 100%;
+    margin-top: 0px;
+
+    @media (min-width: $screen-xs-min) {
+      padding: 0;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0px !important;
+      position: relative !important;
+      bottom: 0px;
+    }
+  }
+
+  .button-style-one {
+    @extend .button-primary;
+    @extend .button-large;
+    max-width: 100%;
+    @media (min-width: $screen-xs-min) {
+      width: auto;
+      position: relative;
+    }
+  }
+
+  .button-style-two {
+    @extend .button-secondary;
+    @extend .button-large;
+    max-width: 100%;
+    @media (min-width: $screen-xs-min) {
+      width: auto;
+      position: relative;
+    }
+  }
+
+  .section-small {
+    height: 450px;
+  }
+  .section-medium {
+    height: 600px;
+  }
+  .section-large {
+    height: 750px;
+  }
+
+}
