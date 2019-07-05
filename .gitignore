@@ -1,5 +1,7 @@
 *.DS_Store
 Extensions/gulp
+Extensions/LocalDistribution
+Extensions/DeployDistribution
 Extensions/node_modules
 Extensions/ns_npm_repository
 Extensions/distro.json
@@ -9,6 +11,8 @@ Extensions/package.json
 
 
 Theme/gulp
+Theme/LocalDistribution
+Theme/DeployDistribution
 Theme/node_modules
 Theme/ns_npm_repository
 Theme/distro.json
