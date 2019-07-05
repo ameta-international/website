@@ -1,0 +1,95 @@
+{
+	"name": "Columns",
+	"fantasyName": "Columns",
+	"vendor": "NetSuite",
+	"version": "1.0.1",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "Add text columns with images to your website",
+	"skins": [],
+	"assets": {
+		"img": {
+			"files": [
+				"img/cct_netsuite_columns_icon.svg"
+			]
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/ColumnsCCT/Sass/_netsuite-columnscct.scss",
+			"myaccount": "Modules/ColumnsCCT/Sass/_netsuite-columnscct.scss",
+			"checkout": "Modules/ColumnsCCT/Sass/_netsuite-columnscct.scss"
+		},
+		"files": [
+			"Modules/ColumnsCCT/Sass/_netsuite-columnscct.scss",
+			"Modules/ColumnsCCT/Sass/_columnscct.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ColumnsCCT/Templates/netsuite_columnscct.tpl",
+					"Modules/ColumnsCCT/Templates/netsuite_columnscct_column.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/ColumnsCCT/Templates/netsuite_columnscct.tpl",
+					"Modules/ColumnsCCT/Templates/netsuite_columnscct_column.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/ColumnsCCT/Templates/netsuite_columnscct.tpl",
+					"Modules/ColumnsCCT/Templates/netsuite_columnscct_column.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/ColumnsModule/JavaScript/NetSuite.Columns.Module.js",
+			"myaccount": "Modules/ColumnsModule/JavaScript/NetSuite.Columns.Module.js",
+			"checkout": "Modules/ColumnsModule/JavaScript/NetSuite.Columns.Module.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ColumnsModule/JavaScript/NetSuite.Columns.Module.js",
+					"Modules/ColumnsCCT/JavaScript/NetSuite.ColumnsCCT.js",
+					"Modules/ColumnsCCT/JavaScript/ColumnsCCT.View.js",
+					"Modules/ColumnsCCT/JavaScript/ColumnsCCT.Column.View.js",
+					"Modules/ColumnsCCT/JavaScript/NetSuite.ColumnsCCT.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/ColumnsModule/JavaScript/NetSuite.Columns.Module.js",
+					"Modules/ColumnsCCT/JavaScript/NetSuite.ColumnsCCT.js",
+					"Modules/ColumnsCCT/JavaScript/ColumnsCCT.View.js",
+					"Modules/ColumnsCCT/JavaScript/ColumnsCCT.Column.View.js",
+					"Modules/ColumnsCCT/JavaScript/NetSuite.ColumnsCCT.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/ColumnsModule/JavaScript/NetSuite.Columns.Module.js",
+					"Modules/ColumnsCCT/JavaScript/NetSuite.ColumnsCCT.js",
+					"Modules/ColumnsCCT/JavaScript/ColumnsCCT.View.js",
+					"Modules/ColumnsCCT/JavaScript/ColumnsCCT.Column.View.js",
+					"Modules/ColumnsCCT/JavaScript/NetSuite.ColumnsCCT.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteBundles/Bundle 248721/extensions/NetSuite/Columns@1.0.1",
+	"extension_id": "1501",
+	"activation_id": 7
+}

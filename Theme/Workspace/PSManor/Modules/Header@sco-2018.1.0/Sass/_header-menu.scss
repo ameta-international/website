@@ -1,0 +1,272 @@
+// Edited for Horizon Theme
+
+// header myaccount menu
+.header-menu-myaccount {
+    font-size: $sc-font-size-s; // was $sc-small-font-size;
+}
+
+// header banner text from config
+.header-menu-bannertext-desktop,
+.header-menu-bannertext {
+    & p {
+        color: $sc-header-banner-text-color;
+        line-height: $sc-header-height;
+        font-size: 0.8rem;
+    }
+}
+
+.header-menu-bannertext {
+    background-color: $sc-header-top-background-color;
+    text-align: center;
+    @media (min-width: $screen-md-min) {
+        display: none;
+    }
+}
+
+.header-menu-bannertext-desktop {
+    display: none;
+    @media (min-width: $screen-md-min) {
+        display: block;
+    }
+}
+
+///////////////////////////////////////////////////////////////
+//header secondary nav
+.header-menu-secondary-nav {
+    margin: 0 0 0 ($sc-main-navigation-link-margin - 10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: $sc-main-navigation-link-font-size;
+
+    @media (min-width: $screen-md-min) {
+        display: block;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        margin: 0 0 0 $sc-main-navigation-link-margin;
+    }
+}
+
+///////////////////////////////////////////////////////////////
+//header search
+
+.header-menu-search {
+    display: none;
+
+    @media (min-width: $screen-md-min) {
+        display: block;
+        padding-left: $sc-padding-lv3;
+    }
+
+	@media (min-width: $screen-lg-min) {
+        display: block;
+        padding-left: $sc-padding-lv5;
+	}
+}
+
+.header-menu-mobile-search,
+.header-menu-mobile-cart {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 10px;
+
+    @media (min-width: $screen-md-min) {
+        display: none;
+    }
+
+    & .header-mini-cart-menu-cart-link  {
+        padding-top: 5px;
+        color: $sc-mobile-header-icon-color;
+        overflow: visible !important;
+    }
+}
+
+.header-menu-search-link {
+    //@extend .middle-title-navigable !optional;
+    font-size: $sc-header-icon-size;
+    background: none;
+    color: $sc-mobile-header-icon-color;
+    //padding: $sc-padding-lv2;
+    cursor: pointer;
+    position: relative;
+    line-height: $sc-header-height;
+    //margin-top: 10px;
+    //border: 1px solid grey;
+    @media (min-width: $screen-md-min) {
+        //line-height: 65px;
+        //margin-top: 0;
+        border: none;
+        padding: 0;
+    }
+}
+.header-menu-search-link:hover,
+.header-menu-search-link.active {
+    color: $sc-mobile-header-icon-active-color;
+}
+.header-menu-search-link:focus {
+    outline: none;
+}
+
+///////////////////////////////////////////////////////////////
+//header maxi menu
+
+.header-menu-level1 {
+    display: none;
+    position: relative; //for full width submenu
+
+    @media (min-width: $screen-md-min) {
+        display: block;
+        min-height: $sc-main-navigation-height;
+        //text-align: center;
+        margin-left: $sc-main-navigation-left-margin;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        margin-left: 0;
+    }
+}
+
+.header-menu-level1 > li {
+    display: inline-block;
+}
+
+%header-hover-open {
+    color: $sc-main-navigation-link-hover-color;
+    border-bottom: 4px solid $sc-main-navigation-link-hover-color;
+}
+
+.header-menu-level1-anchor {
+    display: block;
+    position: relative;
+    height: $sc-main-navigation-height;
+    line-height: 75px; //$sc-main-navigation-height;
+    //padding: 0 $sc-padding-lv2;
+    margin-right: $sc-main-navigation-link-margin-right - 10px;
+    margin-left: $sc-main-navigation-link-margin-left; // - 10px;
+    color: $sc-main-navigation-link-color;
+    font-weight: $sc-font-weight-bold;
+    text-transform: $sc-main-navigation-link-text-transform;
+    letter-spacing: $sc-main-navigation-link-letter-spacing;
+
+    &:hover, &:focus, &:active {
+		@extend %header-hover-open;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        margin-right: $sc-main-navigation-link-margin-right;
+        margin-left: $sc-main-navigation-link-margin-left;
+    }
+}
+
+.open .header-menu-level1-anchor{
+    @extend %header-hover-open;
+}
+
+.header-menu-home-anchor,
+.header-menu-shop-anchor{
+    @extend .header-menu-level1-anchor;
+}
+
+//maxi menu level 2
+.header-menu-back {
+    display: none;
+}
+
+.header-menu-level2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+
+    & li {
+        width: 20%;
+    }
+}
+
+.header-menu-level2-anchor {
+    text-transform: $sc-main-navigation-submenu-heading-text-transform;
+    text-decoration: $sc-main-navigation-submenu-heading-text-decoration;
+    font-weight: $sc-font-weight-normal;
+    font-size: $sc-font-size-m;
+    color: $sc-main-navigation-submenu-heading-color;
+    padding: $sc-main-navigation-submenu-v-padding $sc-main-navigation-submenu-h-padding;
+    display: block;
+    text-align: center;
+    height: auto;
+    min-width: $sc-main-navigation-submenu-heading-width;
+
+    &:hover {
+        color: $sc-main-navigation-submenu-heading-hover-color;
+    }
+
+    & span {
+        display: block;
+    }
+}
+
+//maxi menu level 3
+.header-menu-level3-anchor {
+    display: block;
+    text-transform: $sc-main-navigation-submenu-link-text-transform;
+    padding: $sc-main-navigation-submenu-link-vertical-padding $sc-main-navigation-submenu-link-horizontal-padding 0;
+    color: $sc-myaccount-navigation-submenu-link-color;
+    text-align: $sc-main-navigation-submenu-link-align;
+
+    &:hover {
+        color: $sc-myaccount-navigation-submenu-link-hover-color;
+    }
+
+    &:active, &.active {
+        color: $sc-myaccount-navigation-submenu-link-active-color;
+    }
+}
+
+.header-menu-categories-thumbnail-wrapper {
+    position: relative; // necessary for header-menu-level3 to achieve full width
+}
+
+//container fix for maxi menu on desktop
+.header-menu-push-icon, .header-menu-pop-icon {
+    display: none;
+}
+
+.header-menu-level-container {
+    // for 3rd level use
+    //background-color: rgba($sc-theme-color-overlay, 0.7);
+    //left: 0;
+    //width: 100%;
+
+    position: absolute;
+    top: 100%;
+
+    left: 0; //for full width submenu
+    right: 0; //for full width submenu
+
+    z-index: 1003;
+    @include box-shadow(0 6px 12px transparentize($sc-theme-color-overlay, 1-0.175));
+
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+
+    background-color: $sc-main-navigation-submenu-background-color;
+
+    > li {
+        //@extend .container; // for 3rd level use
+    }
+}
+
+//maxi menu opened
+.open .header-menu-level-container {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}
+
+.categories-thumbnail {
+    display: inline-block;
+
+}

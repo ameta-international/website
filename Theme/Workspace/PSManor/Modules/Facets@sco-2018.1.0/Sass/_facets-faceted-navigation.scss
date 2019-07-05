@@ -1,0 +1,110 @@
+/* Edited for Manor Theme */
+
+.facets-faceted-navigation-results{
+	padding-top: $sc-padding-lv4;
+	padding-left: $sc-padding-lv3;
+    padding-right: $sc-padding-lv3;
+    margin-bottom: $sc-margin-lv4;
+
+	font-size: $sc-font-size-xxl;
+
+	@media (min-width: $screen-md-min){
+		display: none;
+	}
+}
+
+.facets-faceted-navigation-title-alt {
+	color: $sc-color-primary;
+}
+
+.facets-faceted-navigation-facet-group {
+	padding: $sc-padding-lv2 $sc-padding-lv3;
+
+	@media (min-width: $screen-md-min) {
+		padding-left: 0;
+	}
+}
+
+.facets-faceted-navigation-title {
+	display: none;
+
+	@media (min-width: $screen-md-min) {
+		font-family: $sc-font-family;
+        float: left;
+        color: $sc-neutral-shade-500;
+		font-size: $sc-font-size-l;
+		font-weight: $sc-font-weight-normal;
+		text-align: left;
+		display: block;
+		padding: $sc-padding-lv3;
+		padding-left: 0;
+		text-transform: none;
+	}
+}
+
+.facets-faceted-navigation-category-wrapper {}
+
+.facets-faceted-navigation-facets-clear {
+	@extend .filter-generic;
+
+	width: inherit;
+	font-size: $sc-font-size-xs;
+
+	@media (min-width: $screen-md-min) {
+        float: left;
+        clear: left;
+		position: inherit;
+        display: inline-block;
+        padding: 15px 15px 15px 0;
+	}
+
+	@media (max-width: $screen-sm-max) {
+		margin-left: $sc-padding-lv3;
+	}
+}
+
+.facets-faceted-navigation-facets-clear-icon {
+	@extend .facets-faceted-navigation-facet-option-circle;
+}
+.facets-faceted-navigation-facet-group-expander:hover {
+	text-decoration: none;
+}
+
+.facets-faceted-navigation-facet-group-title {
+    font-size: $sc-font-size-m;
+    color: $sc-neutral-shade-500;
+	font-family: $sc-font-family;
+	text-transform: none;
+}
+
+.facets-faceted-navigation-facet-group-expander {
+	display:block;
+	padding: $sc-padding-lv2 0;
+}
+
+.facets-faceted-navigation-facet-group-expander-icon {
+	float: right;
+	color: $sc-color-copy;
+	font-size: $sc-navigation-icon-size;
+	margin-top: -3px;
+	@extend .icon-angle-down;
+	@include transition-transform(300ms ease);
+}
+
+.collapsed .facets-faceted-navigation-facet-group-expander-icon{
+	@include rotate(0deg);
+}
+
+/*  */
+.facets-faceted-navigation-facet-option {
+	@extend .single-select-option;
+}
+
+.facets-faceted-navigation-facet-option-circle {
+	@extend .single-select-icon-close;
+}
+/* */
+
+.facets-faceted-navigation-content .sc-pusher-header{
+	margin:0;
+}

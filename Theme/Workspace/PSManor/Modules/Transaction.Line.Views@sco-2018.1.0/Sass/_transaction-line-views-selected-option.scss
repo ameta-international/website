@@ -1,0 +1,37 @@
+/* Edited for Manor Theme */
+
+.transaction-line-views-selected-option {
+    display: flex;
+}
+
+.transaction-line-views-selected-option-label {
+    margin-right: $sc-margin-lv1;
+    @extend .sc-label;
+
+    .cart-lines-table-middle & {
+        @media (min-width: $screen-sm-min) {
+            flex: 1 1 40%;
+        }
+    	@media (min-width: $screen-md-min) {
+            flex: 1 1 20%;
+        }
+    }
+
+    .header-mini-cart-item-cell-details &:after,
+    .cart-confirmation-modal-options &:after,
+    .order-wizard-cartitems-module-ship-table &:after {
+        content: ':';
+    }
+}
+.transaction-line-views-selected-option-value {
+    @extend .sc-value;
+
+    .cart-lines-table-middle & {
+        @media (min-width: $screen-sm-min) {
+            flex: 1 1 60%;
+        }
+    	@media (min-width: $screen-md-min) {
+            flex: 1 1 80%;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.item-relations-related-item-thumbnail{
+	width:100%;
+	overflow:hidden;
+	display: block;
+	min-height: $img-large !important;
+}
+
+.item-relations-related-item-title {
+	@extend .item-cell-title;
+}
+
+.item-relations-related-item-price{
+	@extend .middle-price;
+}
+
+.item-relations-related-item-rate{
+	margin-bottom:$sc-margin-lv2;
+	display: inline-block;
+	text-align:center;
+	.global-views-star-rating{
+		// width:92px;
+		margin:auto;
+	}
+}

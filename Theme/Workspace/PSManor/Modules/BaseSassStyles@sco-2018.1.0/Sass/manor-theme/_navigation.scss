@@ -1,0 +1,61 @@
+// Main navigation variables
+$sc-main-navigation-height: 65px; /* editable({"type": "string", "label": "Menu height"}) */
+$sc-main-navigation-background-color: white; /* editable({"type": "color", "label": "Background color"}) */
+$sc-theme-color-overlay: black; /* editable({"type": "color", "label": "Shadow and background", "description": "Applies to search menu dropshadow, minicart menu dropshadow, navigation submenu dropshadow and navigation submenu background. Always with 75% opacity."}) */
+$sc-main-navigation-left-margin: 0; /* editable({"type": "string", "label": "Menu left margin on desktop", "description": "Avoids overlapping with logo."}) */
+
+$sc-main-navigation-link-color: $sc-color-secondary; /* editable({"type": "color", "label": "Link color"}) */
+$sc-main-navigation-link-font-size: $sc-font-size-s; /* editable({"type": "string", "label": "Link font size"}) */
+$sc-main-navigation-link-text-transform: none; /* editable({
+	"type": "string",
+	"label": "Link text transform",
+	"options": [
+		{"value": "none", "text": "none"},
+		{"value": "uppercase", "text": "uppercase"},
+		{"value": "lowercase", "text": "lowercase"},
+		{"value": "capitalize", "text": "capitalize"}
+	]
+}) */
+$sc-main-navigation-link-letter-spacing: 0; /* editable({"type": "string", "label": "Link letter spacing"}) */
+$sc-main-navigation-link-margin: $sc-margin-lv7; /* editable({"type": "string", "label": "Menu left margin"}) */
+$sc-main-navigation-link-margin-right: $sc-margin-lv8; /* editable({"type": "string", "label": "Link right margin"}) */
+$sc-main-navigation-link-margin-left: 0; /* editable({"type": "string", "label": "Link left margin"}) */
+
+$sc-main-navigation-link-hover-color: $sc-color-primary; /* editable({"type": "color", "label": "Link hover"}) */
+
+$sc-main-navigation-submenu-v-padding: 7px; /* editable({"type": "string", "label": "Submenu vertical padding"}) */
+$sc-main-navigation-submenu-h-padding: 20px; /* editable({"type": "string", "label": "Submenu horizontal padding"}) */
+$sc-main-navigation-submenu-background-color: $sc-neutral-shade-0; /* editable({"type": "color", "label": "Submenu background"}) */
+
+$sc-main-navigation-submenu-heading-width: 180px; /* editable({"type": "string", "label": "Submenu vertical padding"}) */
+$sc-main-navigation-submenu-heading-color: $sc-color-copy-dark; /* editable({"type": "color", "label": "Level 2 heading"}) */
+$sc-main-navigation-submenu-heading-hover-color: $sc-color-copy; /* editable({"type": "color", "label": "Level 2 hover"}) */
+$sc-main-navigation-submenu-heading-text-transform: capitalize; /* editable({
+	"type": "string",
+	"label": "Level 2 text transform",
+	"options": [
+		{"value": "none", "text": "none"},
+		{"value": "uppercase", "text": "uppercase"},
+		{"value": "lowercase", "text": "lowercase"},
+		{"value": "capitalize", "text": "capitalize"}
+	]
+}) */
+$sc-main-navigation-submenu-heading-text-decoration: none; /* editable({"type": "string", "label": "Level 2 text decoration"}) */
+
+$sc-myaccount-navigation-submenu-link-color: $sc-color-secondary; /* editable({"type": "color", "label": "My Account level 3 submenu link"}) */
+$sc-myaccount-navigation-submenu-link-hover-color: $sc-color-link-hover; /* editable({"type": "color", "label": "My Account level 3 submenu link hover"}) */
+$sc-myaccount-navigation-submenu-link-active-color: $sc-neutral-shade-0; /* editable({"type": "color", "label": "My Account level 3 submenu link active"}) */
+$sc-main-navigation-submenu-link-text-transform: none;
+$sc-main-navigation-submenu-link-vertical-padding: 0;
+$sc-main-navigation-submenu-link-horizontal-padding: $sc-padding-lv1;
+$sc-main-navigation-submenu-link-align: center;
+
+// Mobile navigation variables
+$sc-sidebar-size: 266px; /* editable({"type": "string", "label": "Mobile sidebar width"}) */
+$sc-mobile-navigation-background-color: $sc-color-theme; /* editable({"type": "color", "label": "Mobile background"}) */
+$sc-mobile-navigation-sidebar-overlay-color: transparent; /* editable({"type": "color", "label": "Mobile sidebar overlay"}) */
+
+$sc-mobile-navigation-link-background-color: white; /* editable({"type": "color", "label": "Mobile link background"}) */
+$sc-mobile-navigation-link-color: $sc-color-theme-700; /* editable({"type": "color", "label": "Mobile link"}) */
+$sc-mobile-navigation-link-hover-color: $sc-color-link-hover; /* editable({"type": "color", "label": "Mobile link hover"}) */
+$sc-mobile-navigation-link-active-color: $sc-color-link-hover; /* editable({"type": "color", "label": "Mobile link active"}) */

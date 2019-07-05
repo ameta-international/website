@@ -1,0 +1,32 @@
+// Edited for Manor Theme
+.header-logo{
+    display: block;
+}
+
+
+.header-logo-wrapper {
+	//flex: 0 0 $sc-mobile-header-logo-width;
+    padding-left: $sc-mobile-header-logo-left-padding;
+    margin-top: $sc-mobile-header-logo-top-margin;
+
+    @media(min-width: $screen-md-min) {
+        display: none;
+    }
+}
+
+.header-logo-image {
+    display: block;
+    margin-top: $sc-desktop-header-logo-top-margin;
+    max-width: $sc-mobile-header-logo-width - $sc-mobile-header-logo-left-padding; // for IE, see #106
+
+	@media(min-width: $screen-md-min) {
+        //width: auto;
+        max-width: $sc-desktop-header-logo-width; // for IE, see #106
+    }
+}
+
+.header-sidebar-logo-image {
+	width: 30%;
+	margin-top: 30px;
+}
+

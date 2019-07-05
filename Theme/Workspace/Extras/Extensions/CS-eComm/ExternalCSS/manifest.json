@@ -1,0 +1,43 @@
+{
+	"name": "ExternalCSS",
+	"fantasyName": "External CSS",
+	"vendor": "CS-eComm",
+	"type": "extension",
+	"target": "SCA,SCS,SCIS",
+	"version": "18.2.0",
+	"description": "Allows external CSS files to be referenced by the application",
+	"assets": {},
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/Main.json",
+			"package-lock.json"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/CSeComm.ExternalCSS.Shopping.js",
+			"myaccount": "Modules/Main/JavaScript/CSeComm.ExternalCSS.MyAccount.js",
+			"checkout": "Modules/Main/JavaScript/CSeComm.ExternalCSS.Checkout.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/CSeComm.ExternalCSS.Shopping.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/JavaScript/CSeComm.ExternalCSS.MyAccount.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Main/JavaScript/CSeComm.ExternalCSS.Checkout.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/CS-eComm/ExternalCSS@18.2.0",
+	"extension_id": "2101",
+	"activation_id": 7
+}

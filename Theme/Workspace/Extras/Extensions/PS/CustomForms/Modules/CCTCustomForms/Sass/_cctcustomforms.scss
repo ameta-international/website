@@ -1,0 +1,19 @@
+.cctcustomforms-layout {
+  padding: $sc-padding-lv6 0;
+}
+
+.custom-form-controls-group {
+  margin-bottom: $sc-margin-lv3;
+}
+
+.custom-form-submit {
+  @extend .button-medium;
+}
+
+.custom-form-label {
+  margin-bottom: 0;
+}
+
+.custom-form-select[multiple] {
+  background: none;
+}

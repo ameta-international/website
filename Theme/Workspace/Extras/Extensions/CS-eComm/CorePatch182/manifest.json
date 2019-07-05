@@ -1,0 +1,48 @@
+{
+	"name": "CorePatch182",
+	"fantasyName": "SCA Core Patches",
+	"vendor": "CS-eComm",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "18.2.0",
+	"description": "Patches released for SCA before next major update",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/CSeComm.CorePatch182.Main.js",
+			"myaccount": "Modules/Main/JavaScript/CSeComm.CorePatch182.Main.js",
+			"checkout": "Modules/Main/JavaScript/CSeComm.CorePatch182.Main.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/CSeComm.Facets.Translator.js",
+					"Modules/Main/JavaScript/CSeComm.CorePatch182.Main.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/JavaScript/CSeComm.CorePatch182.Main.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Main/JavaScript/CSeComm.CorePatch182.Main.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteBundles/Bundle 248721/extensions/CS-eComm/CorePatch182@18.2.0",
+	"extension_id": "1301",
+	"activation_id": 7
+}

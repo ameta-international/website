@@ -1,0 +1,72 @@
+.item-cell {
+	margin-bottom: $sc-margin-lv3;
+}
+
+.item-cell-details { // use this to centre the name, price, rating in the product details area
+	text-align: left;
+}
+
+.item-cell-link-image {
+	height:250px;
+	line-height:250px;
+}
+
+.item-cell-image {
+	vertical-align:middle;
+}
+
+.item-cell-title {
+	@extend .xsmall-title-navigable;
+	padding-top: $sc-padding-lv2;
+	display: block;
+}
+
+.item-cell-price {
+	@extend .small-price;
+}
+
+.item-cell-rate-filled {
+	@extend .icon-star-filled;
+}
+
+.item-cell-rate-empty {
+	@extend .icon-star;
+}
+
+///////////////////////////////////////////////////////////////
+//Quick view
+
+.item-cell-image-wrapper {
+	position: relative;
+}
+
+.item-cell-quick-view-wrapper {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 45%;
+}
+
+.item-cell:hover .item-cell-quick-view-wrapper {
+	@media (min-width: $screen-md-min) {
+		display: block;
+	}
+}
+
+.item-cell-quick-view-link {
+	@extend .button-secondary;
+	@extend .button-small;
+	padding: $sc-padding-lv4 $sc-padding-lv6;
+
+	&:hover {
+		background-color: $sc-color-primary;
+		border-color: $sc-color-primary;
+	}
+}
+
+.icon-cell-quick-view-icon {
+	@extend .fa;
+	@extend %fa-search;
+}

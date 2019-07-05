@@ -1,0 +1,58 @@
+{
+	"name": "AboutUsExtension",
+	"fantasyName": "About Us Landing Page - SD",
+	"vendor": "CS-eComm",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "A template for About Us page that can be configurable via SCA Configuration",
+	"assets": {
+		"img": {
+			"files": [
+				"AboutUs/img/about-us-our-history.jpg",
+				"AboutUs/img/about-us-our-values.jpg",
+				"AboutUs/img/about-us-staff-placeholder.png"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/AboutUs/Configuration/AboutUs.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/AboutUs/Templates/about_us.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/AboutUs/Sass/shopping.scss"
+		},
+		"files": [
+			"Modules/AboutUs/Sass/shopping.scss",
+			"Modules/AboutUs/Sass/_about-us.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/AboutUs/JavaScript/SC.AboutUs.1.0.0.AboutUs.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/AboutUs/JavaScript/SC.AboutUs.1.0.0.AboutUs.js",
+					"Modules/AboutUs/JavaScript/AboutUs.Router.js",
+					"Modules/AboutUs/JavaScript/AboutUs.View.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteBundles/Bundle 248721/extensions/CS-eComm/AboutUsExtension@1.0.0",
+	"extension_id": "301",
+	"activation_id": 7
+}

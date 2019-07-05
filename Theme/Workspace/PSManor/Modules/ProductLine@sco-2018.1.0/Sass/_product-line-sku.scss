@@ -1,0 +1,43 @@
+/* Edited for Manor Theme */
+
+.product-line-sku-container {
+    margin-bottom: $sc-margin-lv1;
+    
+    .cart-lines-table-middle & {
+        display: flex;
+    }
+}
+.product-line-sku-value {
+	@extend .sc-sku-value;
+    
+    .cart-lines-table-middle & {
+        font-weight: $sc-font-weight-light;
+		font-size: $sc-font-size-l;
+
+        @media (min-width: $screen-sm-min) {
+            flex: 1 1 60%;
+        }
+    	@media (min-width: $screen-md-min) {
+            flex: 1 1 80%;
+        }
+    }
+}
+.product-line-sku-label {
+    @extend .sc-sku-label;
+    margin-right: 3px;
+    
+    .cart-lines-table-middle & {
+        @media (min-width: $screen-sm-min) {
+            flex: 1 1 40%;
+        }
+    	@media (min-width: $screen-md-min) {
+            flex: 1 1 20%;
+        }
+    }
+
+    .cart-confirmation-modal-details &:after,
+    .transaction-line-views-cell-navigable-sku &:after {
+        margin-left: -2px;
+        content: ':';
+    }
+}

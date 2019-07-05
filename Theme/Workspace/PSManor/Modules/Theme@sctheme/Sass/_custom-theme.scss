@@ -1,0 +1,27 @@
+#content .home-page { //push carousel under header
+    margin-top: -$sc-header-margin-bottom-desktop;
+}
+
+.banner-breadcrumb-top {
+    .theme-has-static-header & {
+        padding-top: 0;
+    }
+}
+
+$sc-featured-title-text-color: $sc-neutral-shade-0; /* editable({"type": "color", "label": "Featured title text color"}) */
+$sc-featured-title-background-color: $sc-color-secondary; /* editable({"type": "color", "label": "Featured title background color"}) */
+
+/* Headings for Recently Viewed Items, Merchandising Zones etc */
+.featured-title {
+    margin: $sc-margin-lv8 0 $sc-margin-lv2 0;
+    padding: 12px 50px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: $sc-featured-title-text-color;
+    background-color: $sc-featured-title-background-color;
+    font-family: $sc-theme-secondary-font;
+    font-size: $sc-font-size-xl;
+    @media (min-width: $screen-md-min) {
+        font-size: $sc-font-size-xxl;
+    }
+}

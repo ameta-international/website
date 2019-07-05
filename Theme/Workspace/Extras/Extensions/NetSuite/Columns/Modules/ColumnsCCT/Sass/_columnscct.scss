@@ -1,0 +1,176 @@
+
+$columnscct-padding: $sc-padding-lv4;
+$columnscct-padding-small: $sc-padding-lv4 / 2;
+$columnscct-padding-column: $sc-padding-lv3;
+
+
+.columnscct-layout {
+	width: 100%;
+	margin-top: $columnscct-padding;
+	margin-bottom: $columnscct-padding;
+}
+
+.columnscct-extra-padding {
+	padding-left: $columnscct-padding-column;
+	padding-right: $columnscct-padding-column;
+}
+
+.columnscct-empty {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h3.columnscct-header {
+	@extend h1;
+	text-align: center;
+	padding-bottom: $columnscct-padding;
+	word-wrap: break-word;
+}
+
+h3.columnscct-header:empty {
+	height: 0;
+	padding-bottom: 0;
+}
+
+.columnscct-columns-wrapper {
+	margin-left: (-1 * $columnscct-padding-column / 2);
+	margin-right: (-1 * $columnscct-padding-column / 2);
+	display: block;
+	text-align: left;
+	vertical-align: top;
+}
+
+.columnscct-column-container {
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: ($columnscct-padding-column / 2);
+	padding-right: ($columnscct-padding-column / 2);
+	padding-bottom: 0;
+	padding-top: 0;
+	box-sizing: border-box;
+	word-wrap: break-word;
+}
+
+
+.grid-1 .columnscct-column-container {
+	width: 50%;
+}
+.grid-2 .columnscct-column-container {
+	width: 50%;
+}
+.grid-3 .columnscct-column-container {
+	width: 33.33%;
+}
+
+
+@media screen and (max-width: $screen-sm-min - 1px) {
+	%columnscct-column-1 {
+		width: 100%;
+	}
+
+	%columnscct-margin-bottom {
+		margin-bottom: $columnscct-padding-column;
+	}
+
+	.grid-xs-1 .columnscct-column-container {
+		@extend %columnscct-column-1;
+	}
+	.grid-xs-2 .columnscct-column-container {
+		@extend %columnscct-column-1;
+	}
+	.grid-xs-3 .columnscct-column-container {
+		@extend %columnscct-column-1;
+	}
+
+	.grid-xs-3 .columnscct-column-container:nth-child(-n+2) {
+		@extend %columnscct-margin-bottom;
+	}
+
+	.grid-xs-2 .columnscct-column-container:nth-child(-n+1) {
+		@extend %columnscct-margin-bottom;
+	}
+}
+
+.columnscct-img {
+	object-fit: scale-down;
+	display: inline-block;
+}
+
+.columnscct-img-container {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	font-size:0;
+	line-height: 0;
+}
+
+.columnscct-padding-small {
+	padding-top: $columnscct-padding-small;
+}
+
+.columnscct-button-container {
+	width: 100%;
+	margin-top: $columnscct-padding-small;
+
+	@media (min-width: $screen-xs-min) {
+		padding: 0;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: $columnscct-padding-small !important;
+		position: relative !important;
+		bottom: 0px;
+	}
+}
+
+.columnscct-button {
+	@extend .button-primary;
+	@extend .button-small;
+	max-width: 100%;
+	@media (min-width: $screen-xs-min) {
+		width: auto;
+		position: relative;
+	}
+}
+
+.columnscct-text-color-dark .columnscct-text-container,
+.columnscct-text-color-dark .columnscct-text-container p,
+.columnscct-text-color-dark .columnscct-text-container div,
+.columnscct-text-color-dark .columnscct-text-container h1,
+.columnscct-text-color-dark .columnscct-text-container h2,
+.columnscct-text-color-dark .columnscct-text-container h3,
+.columnscct-text-color-dark .columnscct-text-container li,
+.columnscct-text-color-dark .columnscct-column-caption,
+.columnscct-text-color-dark .columnscct-header {
+	color: $sc-color-copy-dark;
+}
+
+.columnscct-text-color-dark .columnscct-text-container blockquote {
+	color: lighten($sc-color-copy-dark, 20);
+}
+
+.columnscct-text-color-light .columnscct-text-container,
+.columnscct-text-color-light .columnscct-text-container p,
+.columnscct-text-color-light .columnscct-text-container div,
+.columnscct-text-color-light .columnscct-text-container h1,
+.columnscct-text-color-light .columnscct-text-container h2,
+.columnscct-text-color-light .columnscct-text-container h3,
+.columnscct-text-color-light .columnscct-text-container li,
+.columnscct-text-color-light .columnscct-column-caption,
+.columnscct-text-color-light .columnscct-header {
+	color: $sc-color-copy-light;
+}
+
+.columnscct-text-color-light .columnscct-text-container blockquote {
+	color: lighten($sc-color-copy-light, 10);
+}
+
+.columnscct-text-align-center .columnscct-column-container {
+	text-align: center;
+}
+
+.columnscct-text-align-left .columnscct-column-container {
+	text-align: left;
+}
+
