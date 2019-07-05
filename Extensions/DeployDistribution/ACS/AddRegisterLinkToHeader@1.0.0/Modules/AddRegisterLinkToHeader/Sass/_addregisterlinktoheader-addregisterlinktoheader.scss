@@ -1,0 +1,17 @@
+.header-profile-menu-register-container {
+	@extend .header-profile-menu-login-container !optional;
+	padding-left: $sc-padding-lv7;
+
+	@media (min-width: $screen-md-min) {
+		padding-left: 0;
+		margin-right: $sc-margin-lv2;
+	}
+}
+
+.header-profile-menu-register {
+	@extend .header-profile-menu-login !optional;
+}
+
+.header-profile-register-link {
+	@extend .header-profile-login-link !optional;
+}
