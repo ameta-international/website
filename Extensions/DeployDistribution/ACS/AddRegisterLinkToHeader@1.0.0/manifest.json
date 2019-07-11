@@ -1,0 +1,76 @@
+{
+    "name": "AddRegisterLinkToHeader",
+    "fantasyName": "Add Register Link to Header",
+    "vendor": "ACS",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "version": "1.0.0",
+    "description": "This extensions add a &#34;register&#34; link to the header next to the login link.",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/AddRegisterLinkToHeader/Templates/acs_addregisterlinktoheader_addregisterlinktoheader.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/AddRegisterLinkToHeader/Templates/acs_addregisterlinktoheader_addregisterlinktoheader.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/AddRegisterLinkToHeader/Templates/acs_addregisterlinktoheader_addregisterlinktoheader.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/AddRegisterLinkToHeader/Sass/_addregisterlinktoheader-addregisterlinktoheader.scss",
+            "myaccount": "Modules/AddRegisterLinkToHeader/Sass/_addregisterlinktoheader-addregisterlinktoheader.scss",
+            "checkout": "Modules/AddRegisterLinkToHeader/Sass/_addregisterlinktoheader-addregisterlinktoheader.scss"
+        },
+        "files": [
+            "Modules/AddRegisterLinkToHeader/Sass/_addregisterlinktoheader-addregisterlinktoheader.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/AddRegisterLinkToHeader/JavaScript/ACS.AddRegisterLinkToHeader.AddRegisterLinkToHeader.js",
+            "myaccount": "Modules/AddRegisterLinkToHeader/JavaScript/ACS.AddRegisterLinkToHeader.AddRegisterLinkToHeader.js",
+            "checkout": "Modules/AddRegisterLinkToHeader/JavaScript/ACS.AddRegisterLinkToHeader.AddRegisterLinkToHeader.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/AddRegisterLinkToHeader/JavaScript/ACS.AddRegisterLinkToHeader.AddRegisterLinkToHeader.js",
+                    "Modules/AddRegisterLinkToHeader/JavaScript/AddRegisterLinkToHeader.View.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/AddRegisterLinkToHeader/JavaScript/ACS.AddRegisterLinkToHeader.AddRegisterLinkToHeader.js",
+                    "Modules/AddRegisterLinkToHeader/JavaScript/AddRegisterLinkToHeader.View.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/AddRegisterLinkToHeader/JavaScript/ACS.AddRegisterLinkToHeader.AddRegisterLinkToHeader.js",
+                    "Modules/AddRegisterLinkToHeader/JavaScript/AddRegisterLinkToHeader.View.js"
+                ]
+            }
+        }
+    }
+}

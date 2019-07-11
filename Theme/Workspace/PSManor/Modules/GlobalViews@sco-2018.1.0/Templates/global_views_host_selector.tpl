@@ -7,13 +7,13 @@
 		{{#each availableHosts}}
 		
 			{{#if hasLanguages}}
-				<optgroup label="{{title}}">
+				<!-- <optgroup label="{{title}}"> -->
 					{{#each languages}}
 						<option value="{{host}}" {{#if isSelected}}selected{{/if}}>
 							{{displayName}}
 						</option>
 					{{/each}}
-				</optgroup>
+				<!-- </optgroup> -->
 			{{/if}}
 			
 		{{/each}}
