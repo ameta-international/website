@@ -1,0 +1,32 @@
+{
+    "name": "ACSFixFacetDropdown",
+    "fantasyName": "ACSFixFacetDropdown",
+    "vendor": "ACS",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "version": "1.0.0",
+    "description": "Fix for Filters Dropdown",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/ACSFixFacetDropdown/JavaScript/ACS.ACSFixFacetDropdown.ACSFixFacetDropdown.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ACSFixFacetDropdown/JavaScript/ACS.ACSFixFacetDropdown.ACSFixFacetDropdown.js"
+                ]
+            }
+        }
+    }
+}
