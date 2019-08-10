@@ -1,0 +1,65 @@
+{
+    "name": "RestrictParentCompanyUpdate",
+    "fantasyName": "Restrict Parent Company Update",
+    "vendor": "ACS-CSS",
+    "type": "extension",
+    "target": "SCA,SCS,SCIS",
+    "version": "1.0.0",
+    "description": "Restricts Contacts from Updating Company Details",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/RestrictParentCompanyUpdate/Templates/profile_contact_information.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/RestrictParentCompanyUpdate/Sass/_restrict-parent-company-update.scss"
+        },
+        "files": [
+            "Modules/RestrictParentCompanyUpdate/Sass/_restrict-parent-company-update.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/RestrictParentCompanyUpdate/JavaScript/RestrictParentCompanyUpdate.js",
+            "checkout": "Modules/RestrictParentCompanyUpdate/JavaScript/RestrictParentCompanyUpdate.Checkout.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/RestrictParentCompanyUpdate/JavaScript/RestrictParentCompanyUpdate.js",
+                    "Modules/RestrictParentCompanyUpdate/JavaScript/Profile.Information.Contact.View.js",
+                    "Modules/RestrictParentCompanyUpdate/JavaScript/RestrictParentCompanyUpdate.Helper.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/RestrictParentCompanyUpdate/JavaScript/RestrictParentCompanyUpdate.Checkout.js",
+                    "Modules/RestrictParentCompanyUpdate/JavaScript/RestrictParentCompanyUpdate.Helper.Checkout.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/RestrictParentCompanyUpdate/SuiteScript/RestrictParentCompanyUpdate.EntryPoint.js",
+        "files": [
+            "Modules/RestrictParentCompanyUpdate/SuiteScript/RestrictParentCompanyUpdate.EntryPoint.js",
+            "Modules/RestrictParentCompanyUpdate/SuiteScript/Profile.Model.Add.Contact.js"
+        ]
+    }
+}
