@@ -26,7 +26,7 @@ define(
 				{ 
 					if(view === FacetsBrowseView.prototype.attributes.id)
 					{
-						var $myGroup = $('#facet-group');
+						var $myGroup = $('.facets-facet-browse-facets .facets-faceted-navigation>div');
 						$myGroup.on('show.bs.collapse','.collapse', function() {
 								$myGroup.find('.collapse.in').collapse('hide');
 						});

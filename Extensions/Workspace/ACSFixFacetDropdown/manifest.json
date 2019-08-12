@@ -2,10 +2,11 @@
     "name": "ACSFixFacetDropdown",
     "fantasyName": "ACSFixFacetDropdown",
     "vendor": "ACS",
+    "version": "1.0.0",
     "type": "extension",
     "target": "SCA,SCS",
-    "version": "1.0.0",
     "description": "Fix for Filters Dropdown",
+    "skins": [],
     "assets": {
         "img": {
             "files": []
@@ -28,5 +29,6 @@
                 ]
             }
         }
-    }
+    },
+    "local_folder": "Workspace/ACSFixFacetDropdown"
 }
