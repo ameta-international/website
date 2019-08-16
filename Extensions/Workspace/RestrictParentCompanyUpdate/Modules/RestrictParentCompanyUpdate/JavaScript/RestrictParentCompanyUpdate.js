@@ -13,10 +13,7 @@ define('RestrictParentCompanyUpdate', [
             var layout = application.getComponent('Layout');
 
             if (layout) {
-                console.log('profile', profileModel);
-                if (profileModel.get('isContact')) {
-                    Helper.restrictContact();
-                }
+                Helper.restrictContact();
             }
         }
     };
