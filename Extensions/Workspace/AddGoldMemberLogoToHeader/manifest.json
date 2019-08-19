@@ -1,0 +1,83 @@
+{
+    "name": "AddGoldMemberLogoToHeader",
+    "fantasyName": "Add Gold Member Logo To Header",
+    "vendor": "ACS",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "version": "1.0.0",
+    "description": "This extension adds a logo to header when a customer with status gold is loggged in.",
+    "assets": {
+        "img": {
+            "files": [
+                "img/GoldMember.png"
+            ]
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/AddGoldMemberLogoToHeader.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": []
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/AddGoldMemberLogoToHeader/Templates/acs_addgoldmemberlogotoheader_addgoldmemberlogotoheader.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/AddGoldMemberLogoToHeader/Templates/acs_addgoldmemberlogotoheader_addgoldmemberlogotoheader.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/AddGoldMemberLogoToHeader/Templates/acs_addgoldmemberlogotoheader_addgoldmemberlogotoheader.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/AddGoldMemberLogoToHeader/Sass/_addgoldmemberlogotoheader-addgoldmemberlogotoheader.scss",
+            "myaccount": "Modules/AddGoldMemberLogoToHeader/Sass/_addgoldmemberlogotoheader-addgoldmemberlogotoheader.scss",
+            "checkout": "Modules/AddGoldMemberLogoToHeader/Sass/_addgoldmemberlogotoheader-addgoldmemberlogotoheader.scss"
+        },
+        "files": [
+            "Modules/AddGoldMemberLogoToHeader/Sass/_addgoldmemberlogotoheader-addgoldmemberlogotoheader.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/AddGoldMemberLogoToHeader/JavaScript/ACS.AddGoldMemberLogoToHeader.AddGoldMemberLogoToHeader.js",
+            "myaccount": "Modules/AddGoldMemberLogoToHeader/JavaScript/ACS.AddGoldMemberLogoToHeader.AddGoldMemberLogoToHeader.js",
+            "checkout": "Modules/AddGoldMemberLogoToHeader/JavaScript/ACS.AddGoldMemberLogoToHeader.AddGoldMemberLogoToHeader.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/AddGoldMemberLogoToHeader/JavaScript/ACS.AddGoldMemberLogoToHeader.AddGoldMemberLogoToHeader.js",
+                    "Modules/AddGoldMemberLogoToHeader/JavaScript/AddGoldMemberLogoToHeader.View.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/AddGoldMemberLogoToHeader/JavaScript/ACS.AddGoldMemberLogoToHeader.AddGoldMemberLogoToHeader.js",
+                    "Modules/AddGoldMemberLogoToHeader/JavaScript/AddGoldMemberLogoToHeader.View.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/AddGoldMemberLogoToHeader/JavaScript/ACS.AddGoldMemberLogoToHeader.AddGoldMemberLogoToHeader.js",
+                    "Modules/AddGoldMemberLogoToHeader/JavaScript/AddGoldMemberLogoToHeader.View.js"
+                ]
+            }
+        }
+    }
+}

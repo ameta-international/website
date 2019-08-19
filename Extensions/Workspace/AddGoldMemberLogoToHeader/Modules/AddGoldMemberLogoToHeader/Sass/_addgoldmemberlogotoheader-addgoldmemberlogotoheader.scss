@@ -1,0 +1,25 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.addgoldmemberlogotoheader-info-card {
+    @extend .info-card;
+}
+
+.addgoldmemberlogotoheader-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+
+.goldmemberlogo {
+	max-height: $sc-margin-lv5;
+    margin-right: $sc-margin-lv3;
+    height: auto;
+    padding-top: $sc-padding-lv1;
+}
