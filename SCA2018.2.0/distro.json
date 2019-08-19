@@ -180,7 +180,8 @@
         "third_parties/sass.js": "0.10.8",
         "third_parties/twitter-bootstrap-sass": "3.3.7",
         "third_parties/twitter-typeahead": "0.10.5",
-        "third_parties/underscore.js": "1.8.3"
+        "third_parties/underscore.js": "1.8.3",
+        "extensions/Crosssite.Vulnerability.Fix": "dev"
     },
     "tasksConfig": {
         "local": {
