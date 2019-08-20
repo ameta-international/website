@@ -19,3 +19,67 @@ Theme/distro.json
 Theme/gulpfile.js
 Theme/package-lock.json
 Theme/package.json
+
+SCA2018.2.0/ns_npm_repository
+
+# Reference: https://git-scm.com/docs/gitignore
+
+# SuiteCommerce Advanced files #
+################################
+bin
+bin/
+node_modules
+LocalDistribution/*
+LocalDistribution
+DeployDistribution/*
+DeployDistribution
+.nsdeploy
+payload.json
+# distros/vinson-base.part.json
+# Modules/suitecommerce/
+
+# IDE files (e.g. jetbrains) #
+#############
+.idea
+
+## Common git ignores taken from https://gist.github.com/octocat/9257657
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tar.gz
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.bak
+*.swp
