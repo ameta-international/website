@@ -1,0 +1,35 @@
+{
+    "name": "KeepDefaultsExtension",
+    "fantasyName": "KeepDefaultsExtension",
+    "vendor": "ACS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "description": "This extension reverts any changes done to default shipping or billing address and also to the default credit card.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        },
+        "scripts": {
+            "files": [
+                "scripts/SCH_ACS_Default_Shipping_Address.js",
+                "scripts/UE_ACS_Default_Shipping_Address.js",
+                "scripts/UE_ACS_Match_Customer_Address.js"
+            ]
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/KeepDefaultsExtension/SuiteScript/ACS.KeepDefaultsExtension.KeepDefaultsExtension.js",
+        "files": [
+            "Modules/KeepDefaultsExtension/SuiteScript/ACS.KeepDefaultsExtension.KeepDefaultsExtension.js"
+        ]
+    },
+    "local_folder": "Workspace/KeepDefaultsExtension"
+}
