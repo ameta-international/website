@@ -66,7 +66,7 @@
         "suitetalk": "file:./ns_npm_repository/suitetalk4node",
         "through": "2.3.8",
         "through2": "2.0.3",
-        "underscore": "1.9.1",
+        "underscore": "1.12.1",
         "vinyl": "2.2.0",
         "xml2js": "0.4.19",
         "yargs": "11.0.0"
